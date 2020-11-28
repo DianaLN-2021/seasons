@@ -26,31 +26,31 @@ public class Main {
                 case "january":
                 case "february":
                     season = Season.WINTER;
-                    System.out.println(season);
                     break;
                 case "march":
                 case "april":
                 case "may":
                     season = Season.SPRING;
-                    System.out.println(season);
                     break;
                 case "june":
                 case "july":
                 case "august":
                     season = Season.SUMMER;
-                    System.out.println(season);
                     break;
                 case "september":
                 case "october":
                 case "november":
                     season = Season.AUTUMN;
-                    System.out.println(season);
                     break;
                 default:
                     System.out.println("Sorry, no such month");
-            };
+            }
+
         } catch (IOException e) {
             e.printStackTrace();
+        }
+        if (season != null) {
+            System.out.println(season);
         }
 
     }
